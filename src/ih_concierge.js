@@ -3,6 +3,7 @@ var bind = require('underscore').bind;
 
 module.exports.load = function(bot) {
   bot.onMessage('print?', onMessage);
+  bot.onMessage('address', onMessage);
 };
 
 var onMessage = function(channel, from , message) {
